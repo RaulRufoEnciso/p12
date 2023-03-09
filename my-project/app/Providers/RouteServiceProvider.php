@@ -41,6 +41,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix("adb")
                 ->namespace($this->namespace)
                 ->group(base_path("routes/admin.php"));
+            Route::middleware("cli")
+                ->prefix("cli")
+                ->namespace($this->namespace)
+                ->group(base_path("routes/cliente.php"));
         });
     }
 
