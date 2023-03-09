@@ -45,6 +45,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix("cli")
                 ->namespace($this->namespace)
                 ->group(base_path("routes/cliente.php"));
+            Route::middleware("fact")
+                ->prefix("fact")
+                ->namespace($this->namespace)
+                ->group(base_path("routes/facturacion.php"));
         });
     }
 
