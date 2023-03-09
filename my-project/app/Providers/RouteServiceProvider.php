@@ -49,6 +49,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix("fact")
                 ->namespace($this->namespace)
                 ->group(base_path("routes/facturacion.php"));
+            Route::middleware("cont")
+                ->prefix("cont")
+                ->namespace($this->namespace)
+                ->group(base_path("routes/contabilidad.php"));
         });
     }
 
