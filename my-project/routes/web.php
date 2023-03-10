@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ControladorPrueba;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+}) -> name("lobby");
 
-Route::get('/prueba', function () {
-    return 'welcome';
-});
+Route::get('/prueba',[ControladorPrueba::class,'prueba']) -> name("pruebaa");
+
+//Route::post('/prueba',[ControladorPrueba::class,'prueba2']);
+
+//Route::any('/prueba/{persona?}',[ControladorPrueba::class,'prueba2']);
+
+//Route::match(["get","post"],"/prueba{persona?}",[ControladorPrueba::class,'prueba2']);

@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <p>Aqui puedes ver la Contabilidad: {{$text}}</p>
-    <a href="<?= route("lobby") ?>">Pal LOBBY</a>
+    <a href="<?= route("lobby")?>">Pagina de prueba</a>
+    <p>Mensaje de prueba [{{$text}}]</p>
 </body>
 
 </html>
