@@ -10,6 +10,7 @@
 
 <body>
     <p>Esta es la vista del Cliente {{$text}}</p>
+    <a href="<?= route("lobby") ?>">Pal LOBBY</a>
 </body>
 
 </html>

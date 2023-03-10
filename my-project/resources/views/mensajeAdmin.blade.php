@@ -10,6 +10,7 @@
 
 <body>
     <p>Aquesta es la vista de l'Administrador {{$text}}</p>
+    <a href="<?= route("lobby") ?>">Pal LOBBY</a>
 </body>
 
 </html>

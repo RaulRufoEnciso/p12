@@ -10,6 +10,7 @@
 
 <body>
     <p>Aqui puedes ver las facturaciones: {{$text}}</p>
+    <a href="<?= route("lobby") ?>">Pal LOBBY</a>
 </body>
 
 </html>
